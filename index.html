@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academo Attendance Sheet Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="container-fluid">
+                <a href="#" id="logo-img" class="navbar-brand"><img src="images/Academo_logo.png" alt="Logo_academo" width="150" height="40"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li><hr noshade="noshade">
+                        <li class="navbar-item"><a href="#" class="navbar-link">About us</a></li><hr noshade="noshade">
+                        <li class="navbar-item"><a href="#" class="navbar-link">Vision</a></li><hr noshade="noshade">
+                        <li class="navbar-item"><a href="#" class="navbar-link">Contact Us</a></li><hr noshade="noshade">
+                        <li class="navbar-item"><a href="#" class="navbar-link"><i class="fa fa-fw fa-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div id="banniere" >
+        <div id="banniere-filter">
+            <p id="scroll-target">
+                <a href="#scroll" class="btn btn-default btn-sm"><i class="fa fa-chevron-down fa-3x"></i></a>   
+            </p>  
+        </div>
+        
+    </div>
+    <section>
+        <div class="container bloc">
+            <div class="row">
+                <div id="bloc1" class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="row bloc-content">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="top1"></div>
+                            <div class="body">
+                                <h1>TIME IN</h1>
+                                <p>Attendance login</p>
+                                <p style="color: #ff0000;">*Required</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bloc-content">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="top"></div>
+                            <div class="body">
+                                <p>Name <span class="wildcard">*</span></p> <br>
+                                <input type="text" name="name1" id="name1" placeholder="Your answer" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bloc-content">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="top"></div>
+                            <div class="body">
+                                <p>Time In <span class="wildcard">*</span></p> <br>
+                                <span style="color: #767676;">Time</span><br>
+                                <input type=time min=06:00 max=22:00 name="time_in" id="time_in" required>
+                                <select name="GMT" id="GMT">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="btn1">Submit</button>
+                </div>
+                <div id="bloc2" class="col-lg-6 col-xl-6 col-md-6">
+                    <div class="row bloc-content">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="top2"></div>
+                            <div class="body">
+                                <h1>TIME OUT</h1>
+                                <p>Attendance login</p>
+                                <p style="color: #ff0000;">*Required</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bloc-content">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="top"></div>
+                            <div class="body">
+                                <p>Name <span class="wildcard">*</span></p> <br>
+                                <input type="text" name="name2" id="name2" placeholder="Your answer" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bloc-content">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="top"></div>
+                            <div class="body">
+                                <p>Time Out <span class="wildcard">*</span></p> <br>
+                                <span style="color: #767676;">Time</span><br>
+                                <input type=time min=06:00 max=22:00 name="time_out" id="time_out" required>
+                                <select name="GMT" id="GMT">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="btn2">Submit</button>
+                </div>
+            </div>    
+        </div>
+        
+    </section>
+
+    <footer>
+        <p id="scroll">
+            &copy; 2021 Academo Inc, All rights reserved.
+        </p>
+    </footer>
+
+
+    <script type="text/javascript" src="js/jquery_3-6-0.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
