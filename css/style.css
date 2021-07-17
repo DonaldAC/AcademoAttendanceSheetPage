@@ -25,14 +25,13 @@ section h1, footer p, nav a
     margin-left: 15px;
     font-weight: 700;
     color: #5a58a6;
+    transition: all .5s ease;
 }
 
 .navbar-nav a:hover {
     text-decoration: none;
     color: #ff4a59;
     border-bottom: 2px solid #ff4a59;
-    transition: color .5s ease;
-    transition: border-bottom .2s linear;
 }
 
 html {
@@ -42,8 +41,6 @@ html {
 
 /****Banniere*****/
 #banniere {
-    /* width: 100%;
-    height: 500px; */
     position: relative;
     background: url('../images/bg1.png') center no-repeat;
     background-size: 100% 100%;
@@ -60,8 +57,21 @@ html {
     bottom: 0;
     width: 100%;
 }
+@keyframes clignote {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .fa-chevron-down {
     color: #fff;
+}
+.fa-chevron-down:hover {
+    color: #3b8b6b;
+    -webkit-animation: clignote .5s infinite alternate linear;
+    animation: clignote .5s infinite alternate linear;
 }
 
 /***** Section *****/
@@ -144,25 +154,25 @@ button {
 }
 #btn1 {
     background-color: #f40000;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+
 }
 #btn1:hover {
     background-color: #fff;
     color: #f40000;
     border-bottom: 2px solid #f40000;
-    transition: color .5s ease;
-    transition: border 1s ease;
-    transition: background-color .8s ease;
 }
 #btn2 { 
     background-color: #e14d0b;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+
 }
 #btn2:hover {
     background-color: #fff;
     color: #e14d0b;
     border-bottom: 2px solid #e14d0b;
-    transition: color .5s ease;
-    transition: border 1s ease;
-    transition: background-color .8s ease;
 }
 
 #divA, #divB {
