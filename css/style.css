@@ -204,3 +204,10 @@ footer p {
     font-size: .7em;
 
 }
+
+/* display on phones screen */
+@media(min-width: 375px) and (max-width: 660px) {
+    .fa-chevron-down {
+        display: none;
+    }
+}
